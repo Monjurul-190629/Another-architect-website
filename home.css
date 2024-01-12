@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Work+Sans:wght@400;500;700;800&display=swap');
+
+
+*{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+header{
+    background: rgba(255, 144, 14, 0.10);
+    padding: 20px 100px;
+    font-family: 'Work Sans', sans-serif;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav ul{
+    display: flex;
+}
+header nav ul li{
+    margin-right: 25px;
+    list-style: none;
+}
+header nav ul li a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 500;
+    transition: .5s;
+}
+header nav ul li a:hover{
+    transition: .5s;
+    font-size: 1.25rem;
+    font-weight: 580;
+    text-shadow: 5px 7px 12px rgb(252, 0, 101);
+}
+header nav h3{
+    font-size: 1.8rem;
+    text-shadow: 4px 5px 10px darkred;
+}
+
+.banner{
+    margin-top: 50px;
+}
+
+.banner-content{
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.banner-title{
+    font-size: 3.2rem;
+    color: black;
+    font-weight: 600;
+}
+.banner img{
+    width: 100%;
+    margin-top: 25px;
+}
+.banner button{
+    color: lightgrey;
+    font-weight: 600;
+    background: #FF900E;
+    border: 0;
+    padding: 11px 14px;
+    border-radius: 8px;
+    transition: .5s;
+}
+.banner button:hover{
+    color: #FF900E;
+    background: lightgrey;
+    transition: .5s;
+}
+
+
+/* REspoinsive */
+@media screen and (max-width: 576px) {
+    header nav{
+        flex-direction: column;
+    }
+    header nav h3{
+        font-size: 1.4rem;
+    }
+    header nav ul{
+        justify-content: space-around;
+    }
+    .banner{
+        margin-top: 40px;
+    }
+    
+    .banner-content{
+        width: 300px;
+    }
+    
+    .banner-title{
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+    .banner button{
+        color: lightgrey;
+        font-weight: bold;
+        background: #FF900E;
+        border: 0;
+        padding: 8px 10px;
+        border-radius: 8px;
+        transition: .5s;
+    }
+    .banner p{
+        font-size: 0.9rem;
+    }
+    header{
+        padding: 5px 5px;
+    }
+}
+
+
+@media screen and (max-width: 992px) and (min-width: 577px) {
+    header nav{
+        flex-direction: column;
+    }
+    header nav h3{
+        font-size: 1.6rem;
+    }
+    header nav ul{
+        justify-content: space-around;
+    }
+    .banner{
+        margin-top: 50px;
+    }
+    
+    .banner-content{
+        width: 500px;
+    }
+    
+    .banner-title{
+        font-size: 2.8rem;
+        font-weight: 500;
+    }
+
+    .banner p{
+        font-size: 1rem;
+    }
+    header{
+        padding: 20px 20px;
+    }
+}
