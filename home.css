@@ -60,7 +60,7 @@ header nav h3{
     width: 100%;
     margin-top: 25px;
 }
-.banner button{
+.btn{
     color: lightgrey;
     font-weight: 600;
     background: #FF900E;
@@ -69,11 +69,36 @@ header nav h3{
     border-radius: 8px;
     transition: .5s;
 }
-.banner button:hover{
+.btn:hover{
     color: #FF900E;
     background: lightgrey;
     transition: .5s;
 }
+
+
+/* section-first */
+.section-first{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 100px;
+    background: lightblue;
+    padding: 50px 100px;
+}
+.section-first .section-first-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    background: skyblue;
+    margin-right: 40px;
+}
+.section-first .section-first-img img{
+    height: 220px;
+    width: 220px;
+}
+
+
+
 
 
 /* REspoinsive */
@@ -99,7 +124,7 @@ header nav h3{
         font-size: 1.8rem;
         font-weight: 500;
     }
-    .banner button{
+    .btn{
         color: lightgrey;
         font-weight: bold;
         background: #FF900E;
@@ -114,6 +139,28 @@ header nav h3{
     header{
         padding: 5px 5px;
     }
+    /* section first */
+    .section-first{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 10px 5px;
+        background: lightblue;
+        padding: 20px;
+        flex-direction: column-reverse;
+    }
+    .section-first .section-first-img{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        margin-top: 20px;
+        margin-left: 0px;
+        justify-content: center;
+    }
+    .section-first .section-first-img img{
+        width: 130%;
+    }
+    
 }
 
 
@@ -146,4 +193,29 @@ header nav h3{
     header{
         padding: 20px 20px;
     }
+    .section-first{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 50px 20px;
+        background: lightblue;
+        padding: 50px 50px;
+        flex-direction: column;
+    }
+    .section-first .section-first-img{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        background: skyblue;
+        margin-right: 40px;
+
+    }
+    .section-first-content{
+        margin-top: 20px;
+        text-align: center;
+    }
+    .section-first .section-first-img img{
+        width: 100%;
+    }
+    
 }
